@@ -1,0 +1,23 @@
+{
+  "name": "app4",
+  "version": "1.0.0",
+  "description": "At.4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Vitor",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.5.0",
+    "cookie-parse": "^0.4.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "parser": "^0.1.4",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {}
+}

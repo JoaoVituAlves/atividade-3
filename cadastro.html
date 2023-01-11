@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" type="text/css" href="style.css">
+                   
+    </head>
+        <meta charset="utf-8">
+        <title> Cadastro de Produto </title>
+        <body>
+            <fieldset>
+            <form method= "GET" action="/cadastrarProduto" >
+
+                
+                <h1 style="text-align: center; font-style: oblique; font-weight: 100;">Cadastramento de produtos<h1><br><br>
+
+                <label for="iBarra">Código de barras:</label><br/>
+                <input id="iBarra" name="iBarra" type="text" placeholder="123456789" 
+                 maxlength="9" /><br>
+                
+                 <label for="nome">Produto:</label><br>
+                 <select id="nome" name="nome">
+                    <option value="farol direito">Farol lado direito</option>
+                    <option value="farol esquerdo">Farol lado esquerdo</option>
+                    <option value="volante esportivo">Volante esportivo</option>
+                    <option value="Retrovisor direito">Retrovisor direito</option>
+                    <option value="Retrovisor esquerdo">Retrovisor esquerdo</option>
+                    <option value="pneus 175/65 r14">Pneus 175/65 R14</option>
+                    <option value="pneus 195/85 r16">Pneus 195/85 R16</option>
+                    <option value="capa banco em couro">Capa para banco em couro</option>
+                    <option value="filtro ar motor">Filtro de ar do motor</option>
+                    <option value="filtro oleo">Filtro de oleo </option>
+                    <option value="filtro combustivel">Filtro de combustivel</option>
+                    <option value="Escapamento 4x1">Escapamento 4x1</option>
+                    <option value="Amortecedor dianteiro">Amortecedor dianteiro</option> 
+                    <option value="Amortecedor traseiro">Amortecedor traseiro</option> 
+                    <option value="Suspensão dianteira">Suspensão dianteira</option>
+                    <option value="Suspensão traseira">Suspensão traseira</option>
+                    </select><br>
+
+                    <label for="nome">Fabricante:</label><br>
+                    <select id="fab" name="fab">
+                    <option value="Volks">Volks</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Chery">Chery</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+    
+                        </select><br>
+                
+                <label for="pCusto">Preço de custo:</label><br>
+                <input type="number" step="0.01" name="pCusto" min="0.00" placeholder="200,00"><br>
+
+                <label for="pVenda">Preço de venda:</label><br>
+                <input type="number" step="0.01" name="pVenda" min="0.00" placeholder="250,00"><br>
+    
+
+                <label for="val">Informe a validade do produto:</label><br>
+                <input type="date" id="val" name="val"><br>
+                
+                <label for="Estoque">Estoque (Unidades disponíveis):</label><br>
+                <input type="number" id="Estoque" name="Estoque" min="0" max="60"><br>
+
+                
+                    <input type="submit" value="Cadastrar"><br>
+                    <input type="reset" value="Limpar">
+                
+
+            </form>
+        </fieldset>
+        </body>
+        <script src="index.js"></script>
+</html>
